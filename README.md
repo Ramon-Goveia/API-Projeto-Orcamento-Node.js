@@ -3,5 +3,8 @@ Aplicação back-end com Node.js, para salvar solicitação de orçamento no ban
 
 Tecnologias:
  - Node.js
+ - Express
+ - mongoose
  - MongoDB
  - Nodemailer
+ - Mailtrap
