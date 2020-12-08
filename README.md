@@ -8,3 +8,4 @@ Tecnologias:
  - MongoDB
  - Nodemailer
  - Mailtrap
+ - Cors
