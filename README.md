@@ -13,7 +13,7 @@ Tecnologias:
 
 COMO RODAR O PROJETO
 
-Instalar todas as dependencias indicada pelo package.json
+Instalar todas as dependencias indicadas pelo package.json
 ### npm install
 
 Rodar o projeto usando o nodemon 
