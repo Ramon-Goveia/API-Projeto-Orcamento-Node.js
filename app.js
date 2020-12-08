@@ -1,6 +1,9 @@
 const express = require('express')
 const mongoose = require('mongoose')
 
+require('./models/Orcamento')
+const Orcamento = mongoose.model('Orcamento')
+
 const app = express()
 
 app.use(express.json())
@@ -16,8 +19,16 @@ mongoose.connect('mongodb://localhost/myapp',
 });
 
 app.post('/orcamento', async (req, res) => {
-    console.log(req.body)
-    res.send('Orçamento - 01')
+    await Orcamento.create(req.body, (err) => {
+        if(err) return res.status(400).json({
+            error: true,
+            message: "ERRO: Solicitação de orçamento não enviada!"
+        })
+    })
+    return res.json({
+        error: false,
+        message: "Solicitação de orçamento enviada com sucesso!"
+    })
 })
 
 app.listen(8080, () => {
