@@ -1,8 +1,23 @@
 const express = require('express')
+const mongoose = require('mongoose')
+
 const app = express()
 
-app.get('/', function(req, res){
-    res.send('Hello World!')
+app.use(express.json())
+
+mongoose.connect('mongodb://localhost/myapp', 
+{
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+}).then(() => {
+    console.log("Conexão com MongoDB realizada com sucesso!")
+}).catch((err) => {
+    console.log("ERRO: Erro na conexão com MongoDB!" + err)
+});
+
+app.post('/orcamento', async (req, res) => {
+    console.log(req.body)
+    res.send('Orçamento - 01')
 })
 
 app.listen(8080, () => {
