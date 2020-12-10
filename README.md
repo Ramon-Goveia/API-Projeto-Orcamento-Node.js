@@ -46,3 +46,9 @@ Módulo para enviar email
 
 Permitir acesso a API
 ### npm install --save cors
+#
+
+![](https://github.com/Ramon-Goveia/API-Projeto-Orcamento-Node.js/blob/master/screenshot_20201210_084131.png)
+![](https://github.com/Ramon-Goveia/API-Projeto-Orcamento-Node.js/blob/master/screenshot_20201210_084842.png)
+![](https://github.com/Ramon-Goveia/API-Projeto-Orcamento-Node.js/blob/master/screenshot_20201210_084934.png)
+![](https://github.com/Ramon-Goveia/API-Projeto-Orcamento-Node.js/blob/master/screenshot_20201210_085435.png)
